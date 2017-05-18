@@ -8,23 +8,54 @@
 	<name>edu.web</name>
 	<description>edu.web</description>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+		<project.spring.version>4.3.7.RELEASE</project.spring.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${project.spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${project.spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${project.spring.version}</version>
+		</dependency>
+		
+	
+		
+	
 	</dependencies>
 	
 	<build>
 		<plugins>
 			<plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<port>9090</port>
+					<path>/user</path>
+					<uriEncoding>UTF-8</uriEncoding>
+					<finalName>user</finalName>
+					<server>tomcat7</server>
 				</configuration>
 			</plugin>
 		</plugins>

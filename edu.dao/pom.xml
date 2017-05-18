@@ -1,8 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.tbj.edu</groupId>
+  <parent>
+  	<groupId>com.tbj.edu</groupId>
+	<artifactId>edu</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+  </parent>
   <artifactId>edu.dao</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>dao</name>
   <description>dao</description>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.tbj.common</groupId>
+      	<artifactId>common.dao</artifactId>
+      	<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.tbj.edu</groupId>
+      	<artifactId>edu.entity</artifactId>
+      	<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
