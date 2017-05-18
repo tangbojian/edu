@@ -10,5 +10,7 @@
   <modules>
   	<module>edu.dao</module>
   	<module>edu.web</module>
+  	<module>edu.service</module>
+  	<module>edu.entity</module>
   </modules>
 </project>
