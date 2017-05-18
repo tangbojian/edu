@@ -9,5 +9,6 @@
   
   <modules>
   	<module>edu.dao</module>
+  	<module>edu.web</module>
   </modules>
 </project>
