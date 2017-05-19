@@ -1,4 +1,4 @@
-package com.tbj.edu.dao.user.mapper;
+package com.tbj.edu.dao.mapper;
 
 import com.tbj.common.dao.CommonMapper;
 import com.tbj.edu.entity.User;
